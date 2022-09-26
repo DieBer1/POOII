@@ -1,7 +1,7 @@
-package Lab1;
-import Lab1.Estudiante;
-import Lab1.Docente;
-import Lab1.Administrativo;
+package Modelo;
+import Modelo.Estudiante;
+import Modelo.Docente;
+import Modelo.Administrativo;
 import java.util.Scanner;
 /**
  *

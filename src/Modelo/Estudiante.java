@@ -1,5 +1,5 @@
-package Lab1;
-import Lab1.Carrera;
+package Modelo;
+import Modelo.Carrera;
 import java.util.Scanner;
 /**
  *
