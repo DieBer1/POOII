@@ -5,6 +5,10 @@
  */
 package Vista;
 
+import Modelo.Administrativo;
+import Modelo.Docente;
+import Modelo.Estudiante;
+
 /**
  *
  * @author COMPUMAX
@@ -14,6 +18,9 @@ public class Vista extends javax.swing.JFrame {
     /**
      * Creates new form Vista
      */
+    Estudiante e = new Estudiante();
+    Docente d = new Docente();
+    Administrativo a = new Administrativo();
     public Vista() {
         initComponents();
     }
@@ -27,21 +34,336 @@ public class Vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        codDocenTxField = new javax.swing.JTextField();
+        nomDocenTxField = new javax.swing.JTextField();
+        apeDocenTxFiedl = new javax.swing.JTextField();
+        profDocenTxField = new javax.swing.JTextField();
+        salDocenTxField = new javax.swing.JTextField();
+        estaDocenTxField = new javax.swing.JTextField();
+        pesoDodenTxField = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        codEstuTxField = new javax.swing.JTextField();
+        nomEstuTxField = new javax.swing.JTextField();
+        apeEstuTxField = new javax.swing.JTextField();
+        carrEstuTxField = new javax.swing.JTextField();
+        semEstuTxField = new javax.swing.JTextField();
+        canCredTxField = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        codAdminTxField = new javax.swing.JTextField();
+        nomAdminTxField = new javax.swing.JTextField();
+        apeAdminTxField = new javax.swing.JTextField();
+        ingreAdminTxField = new javax.swing.JTextField();
+        calIMCBtn = new javax.swing.JButton();
+        proyecGradoBtn = new javax.swing.JButton();
+        antiguedadBtn = new javax.swing.JButton();
+        actuSalarioBtn = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText("Datos docente");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("Datos estudiante");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setText("Datos administrativo");
+
+        jLabel4.setText("Codigo");
+
+        jLabel5.setText("Nombre");
+
+        jLabel6.setText("Apellidos");
+
+        jLabel7.setText("Profesion");
+
+        jLabel8.setText("Salario");
+
+        jLabel9.setText("Estatura");
+
+        jLabel10.setText("Peso");
+
+        codDocenTxField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                codDocenTxFieldActionPerformed(evt);
+            }
+        });
+
+        nomDocenTxField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomDocenTxFieldActionPerformed(evt);
+            }
+        });
+
+        profDocenTxField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                profDocenTxFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Codigo");
+
+        jLabel12.setText("Nombre");
+
+        jLabel13.setText("Apellido");
+
+        jLabel14.setText("Carrera");
+
+        jLabel15.setText("Semestre");
+
+        jLabel16.setText("Cantidad de creditos");
+
+        jLabel17.setText("Codigo");
+
+        jLabel18.setText("Nombre");
+
+        jLabel19.setText("Apellido");
+
+        jLabel20.setText("Año de ingreso");
+
+        calIMCBtn.setText("Calcular IMC");
+        calIMCBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calIMCBtnActionPerformed(evt);
+            }
+        });
+
+        proyecGradoBtn.setText("Matricular proyecto de grado");
+        proyecGradoBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                proyecGradoBtnActionPerformed(evt);
+            }
+        });
+
+        antiguedadBtn.setText("Calcular antiguedad");
+        antiguedadBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                antiguedadBtnActionPerformed(evt);
+            }
+        });
+
+        actuSalarioBtn.setText("Actualizar salario");
+        actuSalarioBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actuSalarioBtnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(calIMCBtn)
+                        .addGap(100, 100, 100)
+                        .addComponent(proyecGradoBtn)
+                        .addGap(118, 118, 118)
+                        .addComponent(antiguedadBtn)
+                        .addGap(109, 109, 109)
+                        .addComponent(actuSalarioBtn))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel4))
+                                .addGap(32, 32, 32)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(codDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nomDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel6)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel8)
+                                        .addGap(23, 23, 23)))
+                                .addGap(14, 14, 14)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(apeDocenTxFiedl, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                                    .addComponent(salDocenTxField)
+                                    .addComponent(profDocenTxField)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel10)
+                                        .addGap(28, 28, 28)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(estaDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(pesoDodenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(132, 132, 132)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel12)
+                                    .addComponent(jLabel13)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel16))
+                                .addGap(35, 35, 35)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(codEstuTxField)
+                                    .addComponent(nomEstuTxField)
+                                    .addComponent(apeEstuTxField)
+                                    .addComponent(carrEstuTxField)
+                                    .addComponent(semEstuTxField)
+                                    .addComponent(canCredTxField, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)))
+                            .addComponent(jLabel2))
+                        .addGap(132, 132, 132)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel17)
+                                    .addComponent(jLabel18)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabel20))
+                                .addGap(35, 35, 35)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(codAdminTxField)
+                                    .addComponent(nomAdminTxField)
+                                    .addComponent(apeAdminTxField)
+                                    .addComponent(ingreAdminTxField, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)))))
+                    .addComponent(jLabel1))
+                .addContainerGap(90, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(codDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11)
+                    .addComponent(codEstuTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel17)
+                    .addComponent(codAdminTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(nomDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12)
+                    .addComponent(nomEstuTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18)
+                    .addComponent(nomAdminTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(apeDocenTxFiedl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13)
+                    .addComponent(apeEstuTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel19)
+                    .addComponent(apeAdminTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(profDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14)
+                    .addComponent(carrEstuTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel20)
+                    .addComponent(ingreAdminTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(salDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15)
+                    .addComponent(semEstuTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(estaDocenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16)
+                    .addComponent(canCredTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(pesoDodenTxField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(calIMCBtn)
+                    .addComponent(proyecGradoBtn)
+                    .addComponent(antiguedadBtn)
+                    .addComponent(actuSalarioBtn))
+                .addContainerGap(137, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void codDocenTxFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codDocenTxFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_codDocenTxFieldActionPerformed
+
+    private void nomDocenTxFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomDocenTxFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomDocenTxFieldActionPerformed
+
+    private void profDocenTxFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profDocenTxFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_profDocenTxFieldActionPerformed
+
+    private void calIMCBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calIMCBtnActionPerformed
+        // TODO add your handling code here:
+        d.IMC();
+    }//GEN-LAST:event_calIMCBtnActionPerformed
+
+    private void antiguedadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_antiguedadBtnActionPerformed
+        // TODO add your handling code here:
+        a.antiguedad();
+    }//GEN-LAST:event_antiguedadBtnActionPerformed
+
+    private void actuSalarioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actuSalarioBtnActionPerformed
+        // TODO add your handling code here:
+        d.aSalario();
+    }//GEN-LAST:event_actuSalarioBtnActionPerformed
+
+    private void proyecGradoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proyecGradoBtnActionPerformed
+        // TODO add your handling code here:
+        e.determinarCreditos();
+    }//GEN-LAST:event_proyecGradoBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +401,47 @@ public class Vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton actuSalarioBtn;
+    private javax.swing.JButton antiguedadBtn;
+    private javax.swing.JTextField apeAdminTxField;
+    private javax.swing.JTextField apeDocenTxFiedl;
+    private javax.swing.JTextField apeEstuTxField;
+    private javax.swing.JButton calIMCBtn;
+    private javax.swing.JTextField canCredTxField;
+    private javax.swing.JTextField carrEstuTxField;
+    private javax.swing.JTextField codAdminTxField;
+    private javax.swing.JTextField codDocenTxField;
+    private javax.swing.JTextField codEstuTxField;
+    private javax.swing.JTextField estaDocenTxField;
+    private javax.swing.JTextField ingreAdminTxField;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField nomAdminTxField;
+    private javax.swing.JTextField nomDocenTxField;
+    private javax.swing.JTextField nomEstuTxField;
+    private javax.swing.JTextField pesoDodenTxField;
+    private javax.swing.JTextField profDocenTxField;
+    private javax.swing.JButton proyecGradoBtn;
+    private javax.swing.JTextField salDocenTxField;
+    private javax.swing.JTextField semEstuTxField;
     // End of variables declaration//GEN-END:variables
 }
